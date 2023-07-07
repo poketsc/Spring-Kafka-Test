@@ -9,7 +9,7 @@ public class KafkaConsumer {
 
     private static final String TOPIC_NAME = "topic5";
 
-    ObjectMapper objectMapper = new ObjectMapper();˚
+    ObjectMapper objectMapper = new ObjectMapper();
 
     @KafkaListener(topics = TOPIC_NAME)
     public void listenMessage(String jsonMessage) {
